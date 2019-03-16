@@ -42,7 +42,7 @@ class Net(nn.Module):
 
         return x
 
-def train(model, criterion, train_loader, test_loader, optimizer, epochs = 1000):
+def train(model, criterion, train_loader, test_loader, optimizer, epochs = 10000):
     '''
 
     This is a basic train function in PyTorch library
