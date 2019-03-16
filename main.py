@@ -35,7 +35,7 @@ if __name__ == "__main__":
     gd = GradientDescent(number_of_inputs=len(x_train.columns),
                          indicators=array(x_train.values.tolist()),
                          best_trades=array([y_train.values.tolist()]).T,
-                         no_iter=10)
+                         no_iter=10000)
 
     print("Gradient descent results: ")
     print(gd.gradient_weights)
@@ -84,7 +84,7 @@ if __name__ == "__main__":
     result_model = test_rbm()
 
     income_rbm = 0
-    for index in range(99):
+    for index in range(9900):
         print(index)
         res = result_model[index][:37].mean()
         print(res)
